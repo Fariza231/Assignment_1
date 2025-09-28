@@ -42,6 +42,10 @@ Metrics collected:
 - Recurrence: T(n) = 2T(n/2) + Θ(n) → Θ(n log n)
 - Strip check requires constant (≈7–8) neighbor comparisons.
 - Observed times align with theory for n ≤ 1000 points.
+
+![img.png](img.png)
+<img width="603" height="359" alt="image" src="https://github.com/user-attachments/assets/76889a70-dd35-43fa-8b2a-7f28af22678a" />
+
 ---
 ## Benchmarks 
 MergeSort: 4.5 ms, depth=10, comparisons=8345
@@ -65,22 +69,7 @@ Closest pair distance: 0.128
 - Closest Pair: Verified against O(n²) solution for small n ≤ 2000.
 - All algorithms pass JUnit 5 tests.
 ---
-## GitHub Workflow
 
-- **Branches**:
-    - `main` → stable releases.
-    - `feature/mergesort`, `feature/quicksort`, `feature/select`, `feature/closest`, `feature/metrics`.
-
-- **Commits**:
-    - `init: maven, junit5, readme`
-    - `feat(metrics): add recursion depth + comparisons`
-    - `feat(mergesort): implement with cutoff + tests`
-    - `feat(quicksort): randomized pivot + smaller-first recursion`
-    - `feat(select): deterministic median-of-medians + tests`
-    - `feat(closest): divide-and-conquer implementation + tests`
-    - `bench: benchmark runner`
-    - `docs: add report in README.md`  
----
 ## Summary
 - Theory vs Measurements: Depth and comparisons match expectations.
 - MergeSort and QuickSort align with Θ(n log n); DeterministicSelect linear as expected.
