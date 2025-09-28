@@ -43,7 +43,7 @@ Metrics collected:
 - Strip check requires constant (≈7–8) neighbor comparisons.
 - Observed times align with theory for n ≤ 1000 points.
 
-![img.png](img.png)
+<img width="509" height="155" alt="Снимок экрана 2025-09-28 182656" src="https://github.com/user-attachments/assets/74b0708a-1cab-44c8-8fa6-0cd404c54d7a" />
 <img width="603" height="359" alt="image" src="https://github.com/user-attachments/assets/76889a70-dd35-43fa-8b2a-7f28af22678a" />
 
 ---
