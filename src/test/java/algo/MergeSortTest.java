@@ -15,7 +15,6 @@ class MergeSortTest {
         MergeSort.sort(a);
         assertArrayEquals(expected, a);
     }
-
     @Test
     void testSmall() {
         int[] a = {5,2,3,1};
