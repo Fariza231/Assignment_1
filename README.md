@@ -14,28 +14,6 @@ Metrics collected:
 - Execution time
 
 ---
-
-## 📂 Project Structure  
-
-```assignment1/
-├─ pom.xml
-├─ README.md
-├─ src/main/java/algo/
-│   ├─ Metrics.java
-│   ├─ SortUtils.java
-│   ├─ MergeSort.java
-│   ├─ QuickSort.java
-│   ├─ DeterministicSelect.java
-│   ├─ ClosestPair.java
-│   ├─ Point2D.java
-│   ├─ Bench.java
-└─ src/test/java/algo/
-├─ MergeSortTest.java
-├─ QuickSortTest.java
-├─ SelectTest.java
-├─ ClosestPairTest.java
-```
----
 ## Architecture Notes
 - Metrics class tracks recursion depth and comparisons.
 - MergeSort uses a reusable buffer and small-n cutoff for insertion sort.
