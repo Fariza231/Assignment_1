@@ -32,7 +32,7 @@ public class DeterministicSelect {
         int storeIndex = lo;
 
         for (int i = lo; i < hi; i++) {
-            if (arr[i] <= pivotValue) {   // 👈 добавил "="
+            if (arr[i] <= pivotValue) {  
                 SortUtils.swap(arr, storeIndex, i);
                 storeIndex++;
             }
@@ -45,7 +45,7 @@ public class DeterministicSelect {
         int n = hi - lo + 1;
         if (n < 5) {
             insertionSort(arr, lo, hi);
-            return lo + (hi - lo) / 2;   // 👈 исправил
+            return lo + (hi - lo) / 2;  
         }
 
         int numMedians = (int) Math.ceil((double) n / 5);
