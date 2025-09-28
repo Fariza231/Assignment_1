@@ -1,4 +1,4 @@
-# Assignment 1 – Divide and Conquer Algorithms
+# Assignment 1 
 ## Project Overview
 
 This project implements and benchmarks classic divide-and-conquer algorithms in Java:
@@ -7,11 +7,6 @@ This project implements and benchmarks classic divide-and-conquer algorithms in 
 - QuickSort – Optimized quicksort with randomized pivot and smaller-partition-first recursion.
 - Deterministic Select – Median-of-Medians selection algorithm to find the k-th smallest element in O(n).
 - Closest Pair of Points – Efficient 2D closest-pair algorithm using divide-and-conquer.
-
-Metrics collected:
-- Recursion depth
-- Number of comparisons
-- Execution time
 
 ---
 ## Architecture Notes
@@ -47,33 +42,8 @@ Metrics collected:
 <img width="603" height="359" alt="image" src="https://github.com/user-attachments/assets/76889a70-dd35-43fa-8b2a-7f28af22678a" />
 
 ---
-## Benchmarks 
-MergeSort: 4.5 ms, depth=10, comparisons=8345
-
-QuickSort: 3.1 ms, depth=11, comparisons=8412
-
-DeterministicSelect (k=500): 5277
-
-Closest pair distance: 0.128
-
-## Notes:
-- QuickSort is slightly faster for random arrays due to in-place operations.
-- MergeSort is stable and consistent.
-- DeterministicSelect efficiently finds the median.
-- Closest Pair is efficient for 2D points.
-- Minor differences due to cache effects and garbage collection.
-
-## Testing
-- Sorting: Random and small arrays; recursion depth tracked.
-- Select: Verified against over 100 trials.Arrays.sort(a)[k]
-- Closest Pair: Verified against O(n²) solution for small n ≤ 2000.
-- All algorithms pass JUnit 5 tests.
----
-
-## Summary
-- Theory vs Measurements: Depth and comparisons match expectations.
-- MergeSort and QuickSort align with Θ(n log n); DeterministicSelect linear as expected.
-- Closest Pair results match theoretical O(n log n) with strip optimization.
-- Minor deviations explained by cache, memory allocation, and Java GC.
+## Conclusion
+The conducted experiments demonstrate that the implemented algorithms closely follow their theoretical performance.  
+MergeSort and QuickSort showed expected Θ(n log n) behavior, Deterministic Select confirmed linear performance, and Closest Pair achieved efficiency beyond the naive O(n²) approach. Minor runtime variations are attributed to system-level factors, but overall the results validate the correctness and efficiency of the divide-and-conquer strategies.
 
 ---
